@@ -103,18 +103,19 @@ void reverse(char str[]){
     char str_rev[100];
     int l=strlen(str);
     int j;
-   for(i=l;i>=0;i--){
-    if(str[i]==' '){
-        for(j=i+1;str[j]!='\0'|| str[j]!=' ';j++){
-    str_rev[j]=str[j];
+    int p=-1;
+   for(i=l-1;i>=0;i--){
+    if(str[i]==' '|| i==0){
+        for(j=i+1;str[j]!=' '&& str[j]!='\0' ;j++){
+    str_rev[++p]=str[j];
    }
-   str_rev[j]=' ';
+   str_rev[++p]=' ';
    }
-   str_rev[l]='\0';
-   }
+   
+   }str_rev[p]='\0';
 puts(str_rev);
 
-    }
+  }
 
 
 
