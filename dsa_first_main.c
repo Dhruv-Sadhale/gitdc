@@ -1,8 +1,12 @@
 #include<stdio.h>
 #include "dsa_first.c"
+
 int main(){
+    int a=2;
+int b=3;
     printf("addition of two numbers are\n");
-    int x =add(2,3);
-    printf("%d",x);
+    int sum=0;
+    add(&a,&b, &sum);
+    printf("%d",sum);
     return 0;
 }
