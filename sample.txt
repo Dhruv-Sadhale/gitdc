@@ -1,0 +1,4 @@
+
+abcd 
+efww
+this line is edited using vim command on git bash terminal by pressing i for insert
